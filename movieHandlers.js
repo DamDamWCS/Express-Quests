@@ -55,17 +55,6 @@ const getMovieById = (req, res) => {
       res.status(500).send("Error retrieving data from database");
     });
 };
-const getUsers = (req, res) => {
-  database
-    .query("select * from users")
-    .then(([Users]) => {
-      res.json(Users);
-    })
-    .catch((err) => {
-      console.error(err);
-      res.status(500).send("Error retrieving data from database");
-    });
-};
 
 module.exports = {
   getMovies,
