@@ -19,11 +19,15 @@ const movieHandlers = require("./movieHandlers");
 app.get("/api/movies", movieHandlers.getMovies);
 app.post("/api/movies", movieHandlers.postMovie);
 app.get("/api/movies/:id", movieHandlers.getMovieById);
+app.delete("/api/movies/:id", movieHandlers.deleteMovie);
+
 
 const userHandlers = require("./userHandlers");
 app.get("/api/users", userHandlers.getUsers);
 app.post("/api/users", userHandlers.postUser);
 app.get("/api/users/:id", userHandlers.getUserById);
+app.delete("/api/users/:id", userHandlers.deleteUser);
+
 
 
 
