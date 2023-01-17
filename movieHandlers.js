@@ -76,7 +76,7 @@ const postMovie = (req, res) => {
 module.exports = {
   getMovies,
   getMovieById,
-  postMovie, // don't forget to export your function ;)
+  postMovie, 
 };
 
 
